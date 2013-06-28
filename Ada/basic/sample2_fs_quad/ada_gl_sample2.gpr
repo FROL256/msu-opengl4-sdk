@@ -1,0 +1,35 @@
+project Ada_Gl_Sample2 is
+
+   for Source_Dirs use ("GLUS", "GLUS\GL", "External\include", "cpp_window", "main", "gl_ada");
+   for Main use ("test.adb");
+   for Source_Files use ("cpp_gl_ext.cpp", "cpp_gl_ext.h", "cpp_glHelper.h", "cpp_glHelperShaderProgram.cpp", "cpp_window.cpp", "cpp_window.h", "gl_ext.adb", "gl_ext.ads", "gl_h.adb", "gl_h.ads", "gl_helpers.adb", "gl_helpers.ads", "glus.adb", 
+      "glus.ads", "glus.h", "glus_load.c", "glus_matrix.c", "glus_modelview.c", "glus_shaderprogram.c", "glus_shape.c", "glus_vector.c", "glus_windows.c", "main.adb", "main.ads", "test.adb");
+   for Languages use ("Ada", "C", "C++");
+   for Object_Dir use ".\Binaries";
+
+   package Naming is
+      for Spec_Suffix ("ada") use ".ads";
+      for Body_Suffix ("ada") use ".adb";
+      for Separate_Suffix use ".adb";
+      for Casing use "MixedCase";
+      for Dot_Replacement use "-";
+      for Spec_Suffix ("c++") use ".h";
+   end Naming;
+
+   package Linker is
+      for Default_Switches ("ada") use ("-lopengl32", "-lglew32", "-lgdi32", "./External/lib/glew32.lib");
+   end Linker;
+
+   package Builder is
+      for Default_Switches ("ada") use ("-g");
+   end Builder;
+
+   package Binder is
+   end Binder;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnat05", "-funroll-loops", "-O2", "-gnata");
+   end Compiler;
+
+end Ada_Gl_Sample2;
+
