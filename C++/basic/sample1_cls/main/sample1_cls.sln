@@ -1,12 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "main", "Example05.vcproj", "{FBDC815D-EC32-49EA-9360-F952933D9DEC}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A212A52D-D3DF-4532-9877-C99142F6D7F0} = {A212A52D-D3DF-4532-9877-C99142F6D7F0}
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "main", "Example05.vcxproj", "{FBDC815D-EC32-49EA-9360-F952933D9DEC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLUS", "..\GLUS\GLUS.vcproj", "{A212A52D-D3DF-4532-9877-C99142F6D7F0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLUS", "..\GLUS\GLUS.vcxproj", "{A212A52D-D3DF-4532-9877-C99142F6D7F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

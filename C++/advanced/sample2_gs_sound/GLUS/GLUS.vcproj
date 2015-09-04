@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="9,00"
 	Name="GLUS"
 	ProjectGUID="{A212A52D-D3DF-4532-9877-C99142F6D7F0}"
 	RootNamespace="GLUS"
@@ -184,10 +184,6 @@
 			>
 			<File
 				RelativePath=".\GL\glus.h"
-				>
-			</File>
-			<File
-				RelativePath=".\GL\wglext.h"
 				>
 			</File>
 		</Filter>

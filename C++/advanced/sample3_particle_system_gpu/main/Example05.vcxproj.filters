@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Shader %28Full Screen%29">
+      <UniqueIdentifier>{0c71f240-594e-4781-8189-d3cd7dc5fa07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader %28Geometry%29">
+      <UniqueIdentifier>{ef596a35-8061-48c3-92e7-640b752f6542}</UniqueIdentifier>
+      <Extensions>vs;fs</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Blur.frag">
+      <Filter>Shader %28Full Screen%29</Filter>
+    </None>
+    <None Include="ExtractBrightPixels.frag">
+      <Filter>Shader %28Full Screen%29</Filter>
+    </None>
+    <None Include="FinalBloomPass.frag">
+      <Filter>Shader %28Full Screen%29</Filter>
+    </None>
+    <None Include="Grayscale.frag">
+      <Filter>Shader %28Full Screen%29</Filter>
+    </None>
+    <None Include="Quad.vert">
+      <Filter>Shader %28Full Screen%29</Filter>
+    </None>
+    <None Include="Land.frag">
+      <Filter>Shader %28Geometry%29</Filter>
+    </None>
+    <None Include="Land.vert">
+      <Filter>Shader %28Geometry%29</Filter>
+    </None>
+  </ItemGroup>
+</Project>

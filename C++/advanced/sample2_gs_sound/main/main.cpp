@@ -181,7 +181,7 @@ GLUSboolean init(GLUSvoid)
     if(g_fileName != "")
       g_sound = BASS_StreamCreateFile(FALSE, g_fileName.c_str(),0,0,0); 
     else
-      g_sound = BASS_StreamCreateFile(FALSE, "../Binaries/03 - Vollmond.mp3",0,0,0);
+      g_sound = BASS_StreamCreateFile(FALSE, "../data/03 - Vollmond.mp3",0,0,0);
     
     CheckBassError(__LINE__);
 

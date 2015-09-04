@@ -246,7 +246,7 @@ int main(int argc, char* argv[])
 
 	glusPrepareContext(3, 0, GLUS_FORWARD_COMPATIBLE_BIT);
 
-	if (!glusCreateWindow("C++, GLSL Ray Marching sample", 512, 512, GLUS_FALSE))
+	if (!glusCreateWindow("C++, GLSL full screen quad sample", 512, 512, GLUS_FALSE))
 	{
 		printf("Could not create window!");
 		return -1;
