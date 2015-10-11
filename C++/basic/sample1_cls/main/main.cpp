@@ -2,6 +2,8 @@
 // main.cpp Author: Vladimir Frolov, 2011, Graphics & Media Lab.
 /////////////////////////////////////////////////////////////////
 
+//Test comment
+
 #include <GL/glew.h>
 
 #include "GL/glus.h"
@@ -16,7 +18,7 @@
 
 struct MyInput
 {
-  MyInput() 
+  MyInput()
   {
     cam_rot[0] = cam_rot[1] = cam_rot[2] = cam_rot[3] = 0.f;
     mx = my = 0;
@@ -49,7 +51,7 @@ void RequreExtentions()
 */
 GLUSboolean init(GLUSvoid)
 {
-  try 
+  try
   {
     RequreExtentions();
 
@@ -72,13 +74,13 @@ GLUSboolean init(GLUSvoid)
 */
 GLUSvoid terminate(GLUSvoid)
 {
- 
+
 }
 
 
 GLUSvoid reshape(GLUSuint width, GLUSuint height)
 {
-  try 
+  try
   {
     glViewport(0, 0, width, height);
 
@@ -102,11 +104,11 @@ GLUSvoid mouse(GLUSboolean pressed, GLUSuint button, GLUSuint x, GLUSuint y)
 
   if (button & 1)// left button
   {
-    input.ldown=true;		
-    input.mx=x;			
+    input.ldown=true;
+    input.mx=x;
     input.my=y;
   }
-  
+
   if (button & 4)	// right button
   {
     input.rdown=true;
@@ -124,7 +126,7 @@ GLUSvoid mouseMove(GLUSuint button, GLUSint x, GLUSint y)
 
     input.cam_rot[0] += 0.25f*(y1-input.my);	// change rotation
     input.cam_rot[1] += 0.25f*(x1-input.mx);
-    
+
     input.mx=x;
     input.my=y;
   }
@@ -146,7 +148,7 @@ GLUSvoid keyboard(GLUSboolean pressed, GLUSuint key)
 
   case 'a':
   case 'A':
-   
+
     break;
 
   case 'd':
@@ -185,7 +187,7 @@ GLUSvoid keyboard(GLUSboolean pressed, GLUSuint key)
 
 GLUSboolean update(GLUSfloat a_deltaTime)
 {
-  try 
+  try
   {
     static float elaspedTimeFromStart = 0.0f;
     elaspedTimeFromStart += 10*a_deltaTime;
@@ -241,7 +243,7 @@ int main(int argc, char* argv[])
     return -1;
   }
   glGetError(); // flush error state variable, caused by glew errors
-  
+
 
 	// Only continue, if OpenGL 3.3 is supported.
 	if (!glewIsSupported("GL_VERSION_3_0"))
